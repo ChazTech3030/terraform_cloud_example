@@ -1,4 +1,12 @@
 terraform {
+  # cloud {
+  #   organization = "techtalent"
+
+  #   workspaces {
+  #     name = "terraform_cloud_example"
+  #   }
+  # }
+  
   required_providers {
     aws = {
       source  = "hashicorp/aws"
