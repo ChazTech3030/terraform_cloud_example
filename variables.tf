@@ -64,3 +64,10 @@ variable "instance_size" {
     prod = "t2.large"
   }
 }
+
+variable "vault_address" {
+  type = string
+}
+variable "vault_token" {
+  type = string
+}
