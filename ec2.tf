@@ -22,7 +22,7 @@
 # }
 resource "aws_instance" "demo_server" {
   ami                    = "ami-04f7efe62f419d9f5"
-  instance_type          = lookup(var.instance_size, terraform.workspace)
+  instance_type          = "t2.micro"
 }
   # for_each = {
   #   test_deployment = "t2.micro"
