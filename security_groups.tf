@@ -1,5 +1,5 @@
 resource "aws_security_group" "allow_ssh" {
-  name        = "allow_ssh2"
+  name        = "allow_ssh"
   description = "Allow SSH Connection"
 
 
