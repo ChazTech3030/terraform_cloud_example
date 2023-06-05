@@ -10,7 +10,7 @@ resource "aws_instance" "demo_server" {
       agent = false
       type = "ssh"
       user = "ec2-user"
-      private_key = "ssh_access"
+      private_key = data.vault_generic_secret.aws_access_key.data["ssh_data"]
       host = self.public_ip
     }
     inline = [
