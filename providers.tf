@@ -24,6 +24,4 @@ provider "aws" {
 provider "vault" {
   address = var.vault_address
   token = var.vault_token
-  # address = "https://sample-cluster-public-vault-61ba8966.18057fed.z1.hashicorp.cloud:8200"
-  # token = "hvs.CAESIIZ0Nab2q8pJtzgPl3cgIWeYXkHMxV_9JQ6eqs12RSFPGicKImh2cy5SY3BuTmZvSmM1alVNYVdVaUlGTFltQW4uU1BiYnQQzwE"
 }
