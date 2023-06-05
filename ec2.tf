@@ -15,7 +15,7 @@ resource "aws_instance" "demo_server" {
     }
     inline = [
       "echo 'this is some text on the remote machine exec' >> anyoldfile.txt",
-      "echo 'another line of text' >> anyoldfile.txt"
+      "echo 'another line of text' >> anyoldfile.txt",
       "echo 'remote exec from TF Cloud' >> anyoldfile.txt"
     ]
   }
